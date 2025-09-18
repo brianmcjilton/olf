@@ -13,3 +13,8 @@ It combines your prompt with the file contents and streams the result from Ollam
 ```bash
 olf <filename>
 ```
+## Example
+```bash
+olf report.txt
+Prompt: Summarize this report
+```
