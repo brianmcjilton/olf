@@ -6,8 +6,6 @@ A tiny CLI that pipes a prompt and a file into Ollama
 **ollama-file** is a tiny helper script for running [Ollama](https://ollama.ai) against a text file with a custom prompt.  
 It combines your prompt with the file contents and streams the result from Ollama.  
 
-Think of it like `cat file | ollama`, but with a friendly prompt workflow.
-
 ---
 
 ## Usage
