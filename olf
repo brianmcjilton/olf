@@ -1,0 +1,20 @@
+#!/bin/bash
+# olf - Ollama File
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+
+FILE=$1
+
+if [ ! -f "$FILE" ]; then
+  echo "Error: File '$FILE' not found."
+  exit 1
+fi
+
+# Prompt the user
+read -p "Prompt: " USER_PROMPT
+
+# Pipe into Ollama
+( echo "$USER_PROMPT" && cat "$FILE" ) | ollama run gpt-oss
